@@ -64,4 +64,48 @@ for (let i = 0; i < fruits.length; i++){
 
   example9.append(listItem);
 }
-example9.remove();
+   example9.remove();
+
+
+   example2.style.backgroundColor = "tomato";
+example2.style.color = "white";
+example3.style.backgroundImage = "url(/comode.JPG)";
+
+example4.style.transform = "rotate(-25deg)";
+example4.style.fontSize = "12px";
+example4.style.width = "24px";
+example4.style.height = "20px";
+
+
+let example10 = document.createElement("ul"); //step1
+document.body.append(example10); //step2
+for (let i =1; i <=10; i ++) {
+  let listEl = document.createElement("li");
+  listEl.textContent = "Lorem" + i;
+  example10.append(listEl);
+}
+
+//events 
+ 
+let helloBtn = document.querySelector("#hello");
+helloBtn.addEventListener("click", function() {
+  alert("Hello!");
+})
+
+let byeBtn = document.querySelector("#bye");
+byeBtn.addEventListener("click", function (){
+  alert("Bye!");
+})  
+let talkBtn = document.querySelector("#talk");
+talkBtn.addEventListener("click", function(){
+  alert("My name is Alica");
+} )
+
+let addParagraph = document.querySelector ("#add-paragraph");
+addParagraph.addEventListener("click", function(){
+  let article =document.querySelector("article");
+  let newParagraph = document.createElement("p");
+  newParagraph.textContent = "Facilis consectetur eius accusamus provident, magni inventore illum fugit incidunt et aliquam impedit sit qui alias nam veniam debitis cumque!";
+  newParagraph.style.backgroundColor =" yellow";
+  article.append(newParagraph);
+} )
